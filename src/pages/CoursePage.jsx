@@ -12,6 +12,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 
+import readPDF from "../assets/readM.pdf";
 import { HiMiniMinus } from "react-icons/hi2";
 import { MdOutlineAdd } from "react-icons/md";
 import ReactPlayer from "react-player";
@@ -150,6 +151,16 @@ export default function CoursePage() {
           ))}
         </Accordion>
       </Box>
+      <Button
+        className="btnBuyNow"
+        mt={"4rem"}
+        mr={"4rem"}
+        isDisabled={disabled}
+      >
+        <a href={readPDF} target="_blank" rel="noopener noreferrer">
+          مادة للقراءة
+        </a>
+      </Button>
 
       <Button
         className="btnBuyNow"

@@ -90,7 +90,7 @@ export const data = {
         stage_id: 12,
         title: "قصة قصيرة ",
         videoUrl:
-          "https://res.cloudinary.com/de6p2gp1b/video/upload/v1706061114/videos/fmyl6wfoeeyxljwyb2nk.mp4",
+          "https://res.cloudinary.com/de6p2gp1b/video/upload/v1706069741/videos/kk8x7opkde4rrj6icucq.mp4",
       },
       {
         stage_id: 13,
