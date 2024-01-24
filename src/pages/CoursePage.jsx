@@ -114,6 +114,7 @@ export default function CoursePage() {
                       onContextMenu={(e) => e.preventDefault()}
                       url={stage.videoUrl}
                       controls
+                      loop={false}
                       width="100%"
                       height="auto"
                       ref={videoRef}
