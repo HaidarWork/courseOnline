@@ -1,44 +1,7 @@
 import { useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Box } from "@chakra-ui/react";
-// import ReactPDF, {
-//   Page,
-//   Text,
-//   View,
-//   Document,
-//   StyleSheet,
-//   Image,
-// } from "@react-pdf/renderer";
 
-// const styles = StyleSheet.create({
-//   page: {
-//     flexDirection: "row",
-//     backgroundColor: "#E4E4E4",
-//   },
-//   section: {
-//     margin: 10,
-//     padding: 10,
-//     flexGrow: 1,
-//   },
-// });
-
-// const myDocument = ({ quizResult, questions }) => {
-//   <Document>
-//     <Page size="A4" style={styles.page}>
-//       <View style={styles.section}>
-//         <Image source={logo}></Image>
-//         <Text>النتيجة النهائية</Text>
-//       </View>
-//       <View style={styles.section}>
-//         <Text>عدد الاسئلة الكلي</Text>:<Text>{questions.length}</Text>
-//         <Text>الإجابات الصحيحة:</Text>:<Text>{quizResult.correctAnswers}</Text>
-//         <Text>الإجابات الخاطئة:</Text>:<Text>{quizResult.wrongAnswers}</Text>
-//         <Text>النتجية</Text>:<Text>{quizResult.score}</Text>
-//         <Text>من اصل 100</Text>
-//       </View>
-//     </Page>
-//   </Document>;
-// };
 const Result = ({ quizResult, questions }) => {
   return (
     <div className="result">
@@ -143,10 +106,6 @@ const Exam = ({ questions }) => {
       setActiveQuestion(0);
       setShowResult(true);
       sendResult();
-      // ReactPDf.render(
-      //   <myDocument quizResult={result} questions={questions} />,
-      //   `${__dirname}/${user.username}.pdf`
-      // );
     }
   };
 
@@ -190,7 +149,7 @@ const Exam = ({ questions }) => {
         textAlign={"center"}
         color={"red"}
       >
-        يجب عليك أن تقوم بإكمال الدروس المطلوبة
+        يجب عليك أن تقوم بإكمال الدروس المطلوبة ثم تستطيع اجتياز الامتحان
       </Box>
     ) : (
       <div className="quiz-container">
